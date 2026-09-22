@@ -1,13 +1,28 @@
-# Mini Project 1: Product Information System
+# Mini Project 1 — Product Information System
 
-Proyek ini merupakan perancangan dan implementasi sederhana **Product Information System** berbasis PHP dengan menerapkan konsep arsitektur 3-tier.
+Repositori/dokumen ini berisi rancangan (blueprint) desain konseptual untuk **Sistem Manajemen Data Informasi Produk**, sebagai bagian dari Mini Project 1 mata kuliah **Pemrograman Web**.
 
-## Struktur Arsitektur
-* **Data Layer (`products.php`)**: Menampung data komoditas produk (ID, Nama, Kategori, Harga, Stok, Deskripsi) dalam bentuk array multidimensi.
-* **Processing Layer (`functions.php`)**: Berisi fungsi `hitungTotalNilaiStok()` untuk mengalkulasi nilai total aset gudang serta fungsi `getStatusStokClass()` untuk menandai stok kritis (< 3).
-* **Presentation Layer (`index.php`)**: Merajut komponen data dan fungsi menggunakan `require_once`, lalu merender tampilan data ke dalam layout tabel HTML menggunakan perulangan `foreach`.
+## Isi
 
-## Fitur Utama
-* Kalkulasi otomatis total nilai aset gudang.
-* Penandaan baris tabel secara otomatis untuk produk dengan kondisi stok kritis (`stok < 3`).
-* Tampilan antarmuka yang responsif berbasis Bootstrap 5.
+| Berkas                          | Deskripsi                                                            |
+|----------------------------------|-----------------------------------------------------------------------|
+| `ProductInformationSystem.md`   | Blueprint arsitektur desain konseptual sistem (3 lapisan)             |
+
+## Ringkasan Proyek
+
+Sistem dirancang dengan pendekatan **3-layer architecture** sederhana berbasis PHP prosedural:
+
+1. **Data Layer** (`products.php`) — penyimpanan data produk dalam multidimensional array.
+2. **Processing Layer** (`functions.php`) — logika bisnis, termasuk perhitungan total nilai stok dan penandaan stok kritis.
+3. **Presentation Layer** (`index.php`) — menampilkan data ke tabel HTML menggunakan `require_once` dan `foreach`.
+
+## Catatan
+
+Tahap ini merupakan sesi **desain tanpa coding** — fokus pada pematangan konsep arsitektur sebelum masuk ke tahap implementasi kode.
+
+## Tahap Selanjutnya
+
+- Implementasi `products.php`
+- Implementasi `functions.php`
+- Implementasi `index.php`
+- Pengujian tampilan tabel & validasi logika stok kritis
